@@ -42,6 +42,8 @@ def split_csv_cub(split_path, csv_path):
 
 if __name__ == "__main__":
     
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(current_dir)   
     # make csv file
     if not os.path.exists('./csv_file'):
         os.makedirs('./csv_file')

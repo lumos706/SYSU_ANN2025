@@ -47,6 +47,8 @@ def get_parameter_number(net):
 
 
 if __name__ == "__main__":
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(current_dir) 
     # 命令行参数解析设置
     parser = argparse.ArgumentParser()
     parser.add_argument('-m',
